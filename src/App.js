@@ -1,17 +1,17 @@
-import Bracket from './components/composition/Bracket';
-import Emoji from './components/composition/Emoji';
-import Text from './components/composition/Text';
+import { useState } from 'react';
+import MyComponent from './components/MyComponent';
 
-function App() {
+export default function App() {
+    const [show, setShow] = useState(true);
+
     return (
-        <Emoji>
-            {({ addEmoji }) => (
-                <Bracket>
-                    {({ addBracket }) => <Text addEmoji={addEmoji} addBracket={addBracket} />}
-                </Bracket>
-            )}
-        </Emoji>
+        <div className="app">
+            <div>{show && <MyComponent />}</div>
+            <p>
+                <button type="button" onClick={() => setShow((prevShow) => !prevShow)}>
+                    {show ? 'Hide post' : 'Show post'}
+                </button>
+            </p>
+        </div>
     );
 }
-
-export default App;
