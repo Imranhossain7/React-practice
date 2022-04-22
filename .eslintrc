@@ -21,6 +21,7 @@
     "jest": true
   },
   "rules": {
+    "jsx-no-constructed-context-values": 0,
     "jsx-a11y/mouse-events-have-key-events": 0,
     "no-unreachable": 0,
     "no-useless-constructor": 0,
