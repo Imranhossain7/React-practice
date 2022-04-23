@@ -1,11 +1,11 @@
-import LayoutComponentOne from './components/LayoutComponent';
-import LayoutComponentTwo from './components/LayoutComponent2';
+import './assets/css/global.css';
+import Logo from './components/Logo';
 
 export default function App() {
     return (
         <div className="App">
-            <LayoutComponentOne />
-            <LayoutComponentTwo />
+            <h1>Learn with Sumit</h1>
+            <Logo />
         </div>
     );
 }
