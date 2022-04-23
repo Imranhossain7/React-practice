@@ -1,9 +1,11 @@
-import GetPost2 from './components/UseReduce/GetPost2';
+import LayoutComponentOne from './components/LayoutComponent';
+import LayoutComponentTwo from './components/LayoutComponent2';
 
 export default function App() {
     return (
         <div className="App">
-            <GetPost2 />
+            <LayoutComponentOne />
+            <LayoutComponentTwo />
         </div>
     );
 }
